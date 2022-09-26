@@ -13,6 +13,8 @@ public class BaseTest {
         protected FileUploadPage fileUploadPage;
         protected ContextMenuPage contextMenuPage;
         protected WysiwygEditorPage wysiwygEditorPage;
+        protected NestedFramesPage nestedFramesPage;
+        protected FramesPage framesPage;
 
         @BeforeTest
         public void setUp() {
@@ -26,6 +28,8 @@ public class BaseTest {
             fileUploadPage = new FileUploadPage(driver);
             contextMenuPage = new ContextMenuPage(driver);
             wysiwygEditorPage = new WysiwygEditorPage(driver);
+            nestedFramesPage = new NestedFramesPage(driver);
+            framesPage = new FramesPage(driver);
 
         }
 
