@@ -10,6 +10,7 @@ public class HomePage {
     private By fromJavaScriptAlerts = By.linkText("JavaScript Alerts");
     private By fromFileUpload = By.linkText("File Uploader");
     private By fromContextMenu = By.linkText("Context Menu");
+    private By fromWysiwygEditor = By.linkText("WYSIWYG Editor");
 
 
     public HomePage(WebDriver driver) {
@@ -23,7 +24,6 @@ public class HomePage {
     public JavaScriptAlertsPage clickJavaScriptAlerts(){
         driver.findElement(fromJavaScriptAlerts).click();
         return new JavaScriptAlertsPage(driver);
-
     }
 
     public FileUploadPage clickFileUploader(){
@@ -39,6 +39,10 @@ public class HomePage {
     public ContextMenuPage clickContextMenuPage(){
         driver.findElement(fromContextMenu).click();
         return new ContextMenuPage(driver);
+    }
+    public WysiwygEditorPage clickWysiwygEditor(){
+        driver.findElement(fromWysiwygEditor).click();
+        return new WysiwygEditorPage(driver);
     }
 
     public void clickLinkPage(String textPage){

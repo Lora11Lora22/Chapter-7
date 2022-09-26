@@ -12,6 +12,7 @@ public class BaseTest {
         protected HorizontalSliderPage horizontalSliderPage;
         protected FileUploadPage fileUploadPage;
         protected ContextMenuPage contextMenuPage;
+        protected WysiwygEditorPage wysiwygEditorPage;
 
         @BeforeTest
         public void setUp() {
@@ -24,6 +25,7 @@ public class BaseTest {
             horizontalSliderPage = new HorizontalSliderPage(driver);
             fileUploadPage = new FileUploadPage(driver);
             contextMenuPage = new ContextMenuPage(driver);
+            wysiwygEditorPage = new WysiwygEditorPage(driver);
 
         }
 
