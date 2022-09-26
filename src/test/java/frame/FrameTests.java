@@ -13,7 +13,7 @@ public class FrameTests extends BaseTest {
        WysiwygEditorPage wysiwygEditorPage = homePage.clickWysiwygEditor();
        wysiwygEditorPage.clearTextArea();
 
-       String text1 = "hello";
+       String text1 = "hello ";
        String text2 = "world";
 
        wysiwygEditorPage.setTextArea(text1);

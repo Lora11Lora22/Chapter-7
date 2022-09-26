@@ -6,7 +6,7 @@ import pages.NestedFramesPage;
 
 import static org.testng.Assert.assertEquals;
 
-public class FrameTests extends BaseTest {
+public class FramesTests extends BaseTest {
 
     @Test
     public void testFrameText() {
