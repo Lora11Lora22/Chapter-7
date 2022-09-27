@@ -1,0 +1,9 @@
+pages\ContextMenuPage.class
+pages\NestedFramesPage.class
+pages\FramesPage.class
+pages\FileUploadPage.class
+pages\HomePage.class
+pages\HorizontalSliderPage.class
+pages\KeyPressesPage.class
+pages\WysiwygEditorPage.class
+pages\JavaScriptAlertsPage.class

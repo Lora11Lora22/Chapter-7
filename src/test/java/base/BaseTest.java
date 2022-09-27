@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import pages.*;
 
+import java.util.concurrent.TimeUnit;
+
 public class BaseTest {
         private WebDriver driver;
         protected HomePage homePage;
@@ -15,12 +17,16 @@ public class BaseTest {
         protected WysiwygEditorPage wysiwygEditorPage;
         protected NestedFramesPage nestedFramesPage;
         protected FramesPage framesPage;
+        protected DynamicLoadingPage dynamicLoadingPage;
+
 
         @BeforeTest
         public void setUp() {
             System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
             driver = new ChromeDriver();
             driver.manage().window().maximize();
+            //driver.manage().timeouts().pageLoadTimeout()
+           // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             goHome();
             homePage = new HomePage(driver);
             javaScriptAlertsPage = new JavaScriptAlertsPage(driver);
@@ -30,6 +36,7 @@ public class BaseTest {
             wysiwygEditorPage = new WysiwygEditorPage(driver);
             nestedFramesPage = new NestedFramesPage(driver);
             framesPage = new FramesPage(driver);
+            dynamicLoadingPage = new DynamicLoadingPage(driver);
 
         }
 

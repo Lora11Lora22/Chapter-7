@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
@@ -13,6 +14,7 @@ public class HomePage {
     private By fromWysiwygEditor = By.linkText("WYSIWYG Editor");
     private By fromNestedFrames = By.linkText("Nested Frames");
     private By fromFrames = By.linkText("Frames");
+    private By fromDynamicLoading = By.linkText("Dynamic Loading");
 
 
     public HomePage(WebDriver driver) {
@@ -54,6 +56,11 @@ public class HomePage {
     public NestedFramesPage clickNestedFrames(){
         driver.findElement(fromNestedFrames).click();
         return new NestedFramesPage(driver);
+    }
+
+    public DynamicLoadingPage clickDynamicLoading(){
+        driver.findElement(fromDynamicLoading).click();
+        return new DynamicLoadingPage(driver);
     }
 
     public void clickLinkPage(String textPage){

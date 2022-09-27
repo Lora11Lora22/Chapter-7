@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QaTest">
+    <test name="KeysTests">
+        <classes>
+            <class name="keys.KeysTests"/>
+        </classes>
+    </test>
+    <test name="HorizontalTests">
+        <classes>
+            <class name="slider.HorizontalSliderTests"/>
+        </classes>
+    </test>
+    <test name="AlertsTest">
+        <classes>
+            <class name="alerts.AlertsTests"/>
+        </classes>
+    </test>
+
+
+
+</suite>
