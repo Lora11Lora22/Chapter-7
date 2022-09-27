@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import pages.*;
 
-import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
         private WebDriver driver;
@@ -18,6 +17,9 @@ public class BaseTest {
         protected NestedFramesPage nestedFramesPage;
         protected FramesPage framesPage;
         protected DynamicLoadingPage dynamicLoadingPage;
+        protected DynamicLoadingExample1Page dynamicLoadingExample1Page;
+        protected DynamicLoadingExample2Page dynamicLoadingExample2Page;
+
 
 
         @BeforeTest
@@ -37,7 +39,8 @@ public class BaseTest {
             nestedFramesPage = new NestedFramesPage(driver);
             framesPage = new FramesPage(driver);
             dynamicLoadingPage = new DynamicLoadingPage(driver);
-
+            dynamicLoadingExample1Page = new DynamicLoadingExample1Page(driver);
+            dynamicLoadingExample2Page = new DynamicLoadingExample2Page(driver);
         }
 
         @BeforeMethod
