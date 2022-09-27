@@ -15,7 +15,8 @@ public class HomePage {
     private By fromNestedFrames = By.linkText("Nested Frames");
     private By fromFrames = By.linkText("Frames");
     private By fromDynamicLoading = By.linkText("Dynamic Loading");
-
+    private By fromLargeAndDeepDom = By.linkText("Large & Deep DOM");
+    private By fromInfiniteScroll = By.linkText("Infinite Scroll");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
@@ -25,6 +26,17 @@ public class HomePage {
         driver.findElement(formKeyPressesLink).click();
         return new KeyPressesPage(driver);
     }
+
+    public InfiniteScrollPage clickInfiniteScroll(){
+        driver.findElement(fromInfiniteScroll).click();
+        return new InfiniteScrollPage(driver);
+    }
+
+    public LargeAndDeepDomPage clickLargeAndDeepDom(){
+        driver.findElement(fromLargeAndDeepDom).click();
+        return new LargeAndDeepDomPage(driver);
+    }
+
     public JavaScriptAlertsPage clickJavaScriptAlerts(){
         driver.findElement(fromJavaScriptAlerts).click();
         return new JavaScriptAlertsPage(driver);

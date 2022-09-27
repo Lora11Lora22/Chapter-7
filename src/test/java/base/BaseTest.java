@@ -7,7 +7,7 @@ import pages.*;
 
 
 public class BaseTest {
-        private WebDriver driver;
+        protected WebDriver driver;
         protected HomePage homePage;
         protected JavaScriptAlertsPage javaScriptAlertsPage;
         protected HorizontalSliderPage horizontalSliderPage;
@@ -19,10 +19,11 @@ public class BaseTest {
         protected DynamicLoadingPage dynamicLoadingPage;
         protected DynamicLoadingExample1Page dynamicLoadingExample1Page;
         protected DynamicLoadingExample2Page dynamicLoadingExample2Page;
+        protected LargeAndDeepDomPage largeAndDeepDomPage;
+        protected InfiniteScrollPage infiniteScrollPage;
 
 
-
-        @BeforeTest
+    @BeforeTest
         public void setUp() {
             System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
             driver = new ChromeDriver();
@@ -41,6 +42,8 @@ public class BaseTest {
             dynamicLoadingPage = new DynamicLoadingPage(driver);
             dynamicLoadingExample1Page = new DynamicLoadingExample1Page(driver);
             dynamicLoadingExample2Page = new DynamicLoadingExample2Page(driver);
+            largeAndDeepDomPage = new  LargeAndDeepDomPage(driver);
+            infiniteScrollPage = new InfiniteScrollPage(driver);
         }
 
         @BeforeMethod
