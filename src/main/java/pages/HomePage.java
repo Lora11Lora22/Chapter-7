@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import utils.MultipleWindowsPage;
 
 public class HomePage {
     private WebDriver driver;
@@ -17,6 +18,7 @@ public class HomePage {
     private By fromDynamicLoading = By.linkText("Dynamic Loading");
     private By fromLargeAndDeepDom = By.linkText("Large & Deep DOM");
     private By fromInfiniteScroll = By.linkText("Infinite Scroll");
+    private By fromMultipleWindows = By.linkText("Multiple Windows");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
@@ -25,6 +27,11 @@ public class HomePage {
     public KeyPressesPage clickKeyPresses(){
         driver.findElement(formKeyPressesLink).click();
         return new KeyPressesPage(driver);
+    }
+
+    public MultipleWindowsPage clickMultipleWindows(){
+        driver.findElement(fromMultipleWindows).click();
+        return new MultipleWindowsPage(driver);
     }
 
     public InfiniteScrollPage clickInfiniteScroll(){
