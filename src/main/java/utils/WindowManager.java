@@ -2,6 +2,8 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.Set;
+
 public class WindowManager {
 
    private WebDriver driver;
@@ -30,7 +32,7 @@ public class WindowManager {
    }
 
     public void switchToTab(String tabTitle){
-        var windows = driver.getWindowHandles();
+        Set<String> windows = driver.getWindowHandles();
 
         System.out.println("Number of tabs: " + windows.size());
 

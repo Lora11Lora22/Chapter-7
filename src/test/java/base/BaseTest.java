@@ -1,26 +1,18 @@
 package base;
 
-import com.google.common.io.Files;
 import org.openqa.selenium.Cookie;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.testng.ITestResult;
 import org.testng.annotations.*;
 import pages.*;
 import utils.EventReporter;
 import utils.MultipleWindowsPage;
 import utils.WindowManager;
 
-import java.io.File;
-import java.io.IOException;
 
 
 public class BaseTest {
-    //protected WebDriver driver;
     private EventFiringWebDriver driver;
     protected HomePage homePage;
     protected JavaScriptAlertsPage javaScriptAlertsPage;
@@ -80,7 +72,7 @@ public class BaseTest {
         driver.quit();
     }
 
-    @AfterMethod
+    /*@AfterMethod
     public void recordFailure(ITestResult result) {
         if (ITestResult.FAILURE == result.getStatus()) {
             var camera = (TakesScreenshot) driver;
@@ -93,7 +85,7 @@ public class BaseTest {
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 
     public WindowManager getWindowManager() {
         return new WindowManager(driver);
@@ -107,13 +99,8 @@ public class BaseTest {
     }
 
     private void setCookie() {
-        //    Cookie cookie = new Cookie.Builder("tau", "123")
-        //        .domain("https://the-internet.herokuapp.com")
-        //       .build();
-        //  driver.manage().addCookie(cookie);
-
         Cookie cookie = new Cookie.Builder("tau", "123")
-                .domain("the-internet.herokuapp.com")
+                .domain("the-internet.herokuapp.com/")
                 .build();
         driver.manage().addCookie(cookie);
     }

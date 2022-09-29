@@ -1,4 +1,4 @@
-package javascript;
+package javaScript;
 
 import base.BaseTest;
 import org.testng.annotations.Test;

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="QaTest">
+<suite name="QaTest" parallel ="tests" thread-count="15">
+
     <test name="KeysTests">
         <classes>
             <class name="keys.KeysTests"/>
@@ -16,7 +17,45 @@
             <class name="alerts.AlertsTests"/>
         </classes>
     </test>
-
-
+    <test name="ContextMenuTests">
+        <classes>
+            <class name="contextMenu.ContextMenuTests"/>
+        </classes>
+    </test>
+    <test name="FrameTests">
+        <classes>
+            <class name="frame.FrameTests"/>
+        </classes>
+    </test>
+    <test name="FramesTests">
+        <classes>
+            <class name="frames.FramesTests"/>
+        </classes>
+    </test>
+    <test name="JavaScriptTests">
+        <classes>
+            <class name="javaScript.JavaScriptTests"/>
+        </classes>
+    </test>
+    <test name="NavigationTests">
+        <classes>
+            <class name="navigation.NavigationTests"/>
+        </classes>
+    </test>
+    <test name="FileUploadTest">
+        <classes>
+            <class name="uploads.FileUploadTests"/>
+        </classes>
+    </test>
+    <test name="WaitTests">
+        <classes>
+            <class name="wait.WaitTests"/>
+        </classes>
+    </test>
+    <test name="WaitTests2">
+        <classes>
+            <class name="wait.WaitTests2"/>
+        </classes>
+    </test>
 
 </suite>
