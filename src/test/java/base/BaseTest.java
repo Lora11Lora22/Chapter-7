@@ -5,9 +5,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import pages.*;
+import utils.EventReporter;
 import utils.MultipleWindowsPage;
 import utils.WindowManager;
 import java.io.File;
@@ -15,7 +17,8 @@ import java.io.IOException;
 
 
 public class BaseTest {
-        protected WebDriver driver;
+       // protected WebDriver driver;
+        private EventFiringWebDriver driver;
         protected HomePage homePage;
         protected JavaScriptAlertsPage javaScriptAlertsPage;
         protected HorizontalSliderPage horizontalSliderPage;
@@ -36,11 +39,13 @@ public class BaseTest {
     @BeforeTest
         public void setUp() {
             System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-            driver = new ChromeDriver();
+           // driver = new ChromeDriver();
+            driver = new EventFiringWebDriver(new ChromeDriver());
+            driver.register(new EventReporter());
+            goHome();
             driver.manage().window().maximize();
             //driver.manage().timeouts().pageLoadTimeout()
            // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-            goHome();
             homePage = new HomePage(driver);
             javaScriptAlertsPage = new JavaScriptAlertsPage(driver);
             horizontalSliderPage = new HorizontalSliderPage(driver);
