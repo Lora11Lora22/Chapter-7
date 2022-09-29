@@ -42,12 +42,12 @@ public class BaseTest {
     @BeforeTest
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-       // driver = new ChromeDriver();
+        // driver = new ChromeDriver();
         driver = new EventFiringWebDriver(new ChromeDriver(getChromeOptions()));
         driver.register(new EventReporter());
         goHome();
-        // setCookie();
-        deleteCookie();
+        setCookie();
+        // deleteCookie();
         driver.manage().window().maximize();
         //driver.manage().timeouts().pageLoadTimeout()
         // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -101,22 +101,27 @@ public class BaseTest {
 
     private ChromeOptions getChromeOptions() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("disable-infobars");
+     //   options.addArguments("disable-infobars");
         //options.setHeadless(true);
         return options;
     }
 
-   // private void setCookie() {
-    //    Cookie cookie = new Cookie.Builder("tau", "123")
+    private void setCookie() {
+        //    Cookie cookie = new Cookie.Builder("tau", "123")
         //        .domain("https://the-internet.herokuapp.com")
-        //        .build();
-      //  driver.manage().addCookie(cookie);
-  //  }
+        //       .build();
+        //  driver.manage().addCookie(cookie);
 
-    private void deleteCookie() {
-        Cookie cookie = new Cookie.Builder("optimizelyBuckets", "%7B%TD")
-               .domain("the-internet.herokuapp.com")
-               .build();
-        driver.manage().deleteCookie(cookie);
+        Cookie cookie = new Cookie.Builder("tau", "123")
+                .domain("the-internet.herokuapp.com")
+                .build();
+        driver.manage().addCookie(cookie);
     }
+
+    // private void deleteCookie() {
+    //     Cookie cookie = new Cookie.Builder("optimizelyBuckets", "%7B%TD")
+    //         .domain("the-internet.herokuapp.com")
+    //        .build();
+    //  driver.manage().deleteCookie(cookie);
+    //  }
 }
