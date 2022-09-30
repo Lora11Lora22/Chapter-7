@@ -2,19 +2,19 @@ package wait;
 
 import base.BaseTest;
 import org.testng.annotations.Test;
-import pages.DynamicLoadingExample1Page;
 
 import static org.testng.Assert.assertEquals;
 
 public class WaitTests extends BaseTest {
 
-
     @Test
     public void testWaitUntilVisible(){
-        DynamicLoadingExample1Page dynamicLoadingPage = homePage.clickDynamicLoading().clickExample1();
-        dynamicLoadingPage.clickStart();
-        assertEquals(dynamicLoadingPage.getLoadedText(),
-                "Hello World!", "Loaded text incorrect");
+        homePage.clickLinkPage("Dynamic Loading");
+        dynamicLoadingPage.clickExample1();
+        dynamicLoadingExample1Page.clickStart();
+        assertEquals(dynamicLoadingExample1Page.getLoadedText(),
+                "Hello World!",
+                "Loaded text incorrect");
     }
 }
 

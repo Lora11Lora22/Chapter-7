@@ -13,6 +13,7 @@ public class KeyPressesPage {
         this.driver = driver;
     }
 
+
     public void enterText(String text){
         driver.findElement(inputField).sendKeys(text);
     }

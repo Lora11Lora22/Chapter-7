@@ -9,10 +9,12 @@ import static org.testng.Assert.assertEquals;
 
         @Test
         public void testRightClick(){
-            homePage.clickContextMenuPage();
+            homePage.clickLinkPage("Context Menu");
             contextMenuPage.rightClickInBox();
             String message = contextMenuPage.getPopUpText();
             contextMenuPage.acceptPopUp();
-            assertEquals(message, "You selected a context menu", "Popup message incorrect");
+            assertEquals(message,
+                    "You selected a context menu",
+                    "Popup message incorrect");
         }
     }

@@ -17,15 +17,15 @@ public class JavaScriptAlertsPage {
     }
 
     public void triggerAlert(){
-        triggerAlertButton.findElement(driver).click();
+        driver.findElement(triggerAlertButton).click();
     }
 
     public void triggerConfirm(){
-        triggerConfirmButton.findElement(driver).click();
+        driver.findElement(triggerConfirmButton).click();
     }
 
     public void triggerPrompt(){
-        triggerPromptButton.findElement(driver).click();
+        driver.findElement(triggerPromptButton).click();
     }
 
     public void alert_clickToAccept(){

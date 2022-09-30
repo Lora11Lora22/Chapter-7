@@ -1,93 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="QaTest" duration-ms="57963" started-at="2022-09-26T21:56:06 EEST" finished-at="2022-09-26T21:57:04 EEST">
+  <suite name="QaTest" duration-ms="182245" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:53:47 EEST">
     <groups>
     </groups>
-    <test name="KeysTests" duration-ms="24008" started-at="2022-09-26T21:56:06 EEST" finished-at="2022-09-26T21:56:30 EEST">
-      <class name="keys.KeysTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:keys.KeysTests@3d921e20]" name="setUp" is-config="true" duration-ms="12969" started-at="2022-09-26T21:56:06 EEST" finished-at="2022-09-26T21:56:19 EEST">
+    <test name="WaitTests2" duration-ms="67059" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:51:52 EEST">
+      <class name="wait.WaitTests2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:wait.WaitTests2@12c8a2c0]" name="setUp" is-config="true" duration-ms="44167" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:51:29 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="goHome()[pri:0, instance:keys.KeysTests@3d921e20]" name="goHome" is-config="true" duration-ms="477" started-at="2022-09-26T21:56:19 EEST" finished-at="2022-09-26T21:56:19 EEST">
+        <test-method status="PASS" signature="goHome()[pri:0, instance:wait.WaitTests2@12c8a2c0]" name="goHome" is-config="true" duration-ms="3019" started-at="2022-09-30T15:51:30 EEST" finished-at="2022-09-30T15:51:33 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method status="PASS" signature="testBackSpace()[pri:0, instance:keys.KeysTests@3d921e20]" name="testBackSpace" duration-ms="2499" started-at="2022-09-26T21:56:19 EEST" finished-at="2022-09-26T21:56:22 EEST">
+        <test-method status="PASS" signature="testWaitUntilVisible()[pri:0, instance:wait.WaitTests2@12c8a2c0]" name="testWaitUntilVisible" duration-ms="14893" started-at="2022-09-30T15:51:33 EEST" finished-at="2022-09-30T15:51:48 EEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBackSpace -->
-        <test-method status="PASS" signature="goHome()[pri:0, instance:keys.KeysTests@3d921e20]" name="goHome" is-config="true" duration-ms="1207" started-at="2022-09-26T21:56:22 EEST" finished-at="2022-09-26T21:56:23 EEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goHome -->
-        <test-method status="PASS" signature="testPi()[pri:0, instance:keys.KeysTests@3d921e20]" name="testPi" duration-ms="1336" started-at="2022-09-26T21:56:23 EEST" finished-at="2022-09-26T21:56:24 EEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPi -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:keys.KeysTests@3d921e20]" name="tearDown" is-config="true" duration-ms="5385" started-at="2022-09-26T21:56:24 EEST" finished-at="2022-09-26T21:56:30 EEST">
+        </test-method> <!-- testWaitUntilVisible -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:wait.WaitTests2@12c8a2c0]" name="tearDown" is-config="true" duration-ms="4608" started-at="2022-09-30T15:51:48 EEST" finished-at="2022-09-30T15:51:52 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- keys.KeysTests -->
-    </test> <!-- KeysTests -->
-    <test name="HorizontalTests" duration-ms="18497" started-at="2022-09-26T21:56:30 EEST" finished-at="2022-09-26T21:56:48 EEST">
-      <class name="slider.HorizontalSliderTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:slider.HorizontalSliderTests@3aeaafa6]" name="setUp" is-config="true" duration-ms="9634" started-at="2022-09-26T21:56:30 EEST" finished-at="2022-09-26T21:56:40 EEST">
+      </class> <!-- wait.WaitTests2 -->
+    </test> <!-- WaitTests2 -->
+    <test name="FramesTests" duration-ms="79634" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:05 EEST">
+      <class name="frames.FramesTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:frames.FramesTests@cb0ed20]" name="setUp" is-config="true" duration-ms="50438" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:51:36 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="goHome()[pri:0, instance:slider.HorizontalSliderTests@3aeaafa6]" name="goHome" is-config="true" duration-ms="2038" started-at="2022-09-26T21:56:40 EEST" finished-at="2022-09-26T21:56:42 EEST">
+        <test-method status="PASS" signature="goHome()[pri:0, instance:frames.FramesTests@cb0ed20]" name="goHome" is-config="true" duration-ms="2614" started-at="2022-09-30T15:51:36 EEST" finished-at="2022-09-30T15:51:38 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method status="PASS" signature="testSlider()[pri:0, instance:slider.HorizontalSliderTests@3aeaafa6]" name="testSlider" duration-ms="2205" started-at="2022-09-26T21:56:42 EEST" finished-at="2022-09-26T21:56:44 EEST">
+        <test-method status="PASS" signature="testFrameText()[pri:0, instance:frames.FramesTests@cb0ed20]" name="testFrameText" duration-ms="14491" started-at="2022-09-30T15:51:38 EEST" finished-at="2022-09-30T15:51:53 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrameText -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:frames.FramesTests@cb0ed20]" name="tearDown" is-config="true" duration-ms="12080" started-at="2022-09-30T15:51:53 EEST" finished-at="2022-09-30T15:52:05 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- frames.FramesTests -->
+    </test> <!-- FramesTests -->
+    <test name="ContextMenuTests" duration-ms="80824" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:06 EEST">
+      <class name="contextMenu.ContextMenuTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:contextMenu.ContextMenuTests@b7dd107]" name="setUp" is-config="true" duration-ms="52391" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:51:38 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:contextMenu.ContextMenuTests@b7dd107]" name="goHome" is-config="true" duration-ms="3305" started-at="2022-09-30T15:51:38 EEST" finished-at="2022-09-30T15:51:41 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testRightClick()[pri:0, instance:contextMenu.ContextMenuTests@b7dd107]" name="testRightClick" duration-ms="4721" started-at="2022-09-30T15:51:41 EEST" finished-at="2022-09-30T15:51:46 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRightClick -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:contextMenu.ContextMenuTests@b7dd107]" name="tearDown" is-config="true" duration-ms="20379" started-at="2022-09-30T15:51:46 EEST" finished-at="2022-09-30T15:52:06 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- contextMenu.ContextMenuTests -->
+    </test> <!-- ContextMenuTests -->
+    <test name="HorizontalTests" duration-ms="82659" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:08 EEST">
+      <class name="slider.HorizontalSliderTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:slider.HorizontalSliderTests@462d5aee]" name="setUp" is-config="true" duration-ms="47369" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:51:33 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:slider.HorizontalSliderTests@462d5aee]" name="goHome" is-config="true" duration-ms="1276" started-at="2022-09-30T15:51:33 EEST" finished-at="2022-09-30T15:51:34 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testSlider()[pri:0, instance:slider.HorizontalSliderTests@462d5aee]" name="testSlider" duration-ms="12166" started-at="2022-09-30T15:51:34 EEST" finished-at="2022-09-30T15:51:46 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSlider -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:slider.HorizontalSliderTests@3aeaafa6]" name="tearDown" is-config="true" duration-ms="4617" started-at="2022-09-26T21:56:44 EEST" finished-at="2022-09-26T21:56:48 EEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:slider.HorizontalSliderTests@462d5aee]" name="tearDown" is-config="true" duration-ms="21839" started-at="2022-09-30T15:51:46 EEST" finished-at="2022-09-30T15:52:08 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- slider.HorizontalSliderTests -->
     </test> <!-- HorizontalTests -->
-    <test name="AlertsTest" duration-ms="15283" started-at="2022-09-26T21:56:48 EEST" finished-at="2022-09-26T21:57:04 EEST">
-      <class name="alerts.AlertsTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:alerts.AlertsTests@87f383f]" name="setUp" is-config="true" duration-ms="8756" started-at="2022-09-26T21:56:48 EEST" finished-at="2022-09-26T21:56:57 EEST">
+    <test name="JavaScriptTests" duration-ms="83542" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:09 EEST">
+      <class name="javaScript.JavaScriptTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:javaScript.JavaScriptTests@32eebfca]" name="setUp" is-config="true" duration-ms="50499" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:51:36 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="goHome()[pri:0, instance:alerts.AlertsTests@87f383f]" name="goHome" is-config="true" duration-ms="411" started-at="2022-09-26T21:56:57 EEST" finished-at="2022-09-26T21:56:58 EEST">
+        <test-method status="PASS" signature="goHome()[pri:0, instance:javaScript.JavaScriptTests@32eebfca]" name="goHome" is-config="true" duration-ms="1905" started-at="2022-09-30T15:51:36 EEST" finished-at="2022-09-30T15:51:38 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method status="PASS" signature="testAcceptAlert()[pri:0, instance:alerts.AlertsTests@87f383f]" name="testAcceptAlert" duration-ms="1105" started-at="2022-09-26T21:56:58 EEST" finished-at="2022-09-26T21:56:59 EEST">
+        <test-method status="PASS" signature="testScrollToFifthParagraphs()[pri:0, instance:javaScript.JavaScriptTests@32eebfca]" name="testScrollToFifthParagraphs" duration-ms="8909" started-at="2022-09-30T15:51:38 EEST" finished-at="2022-09-30T15:51:47 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScrollToFifthParagraphs -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:javaScript.JavaScriptTests@32eebfca]" name="goHome" is-config="true" duration-ms="806" started-at="2022-09-30T15:51:47 EEST" finished-at="2022-09-30T15:51:47 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testScrollToTable()[pri:0, instance:javaScript.JavaScriptTests@32eebfca]" name="testScrollToTable" duration-ms="4804" started-at="2022-09-30T15:51:47 EEST" finished-at="2022-09-30T15:51:52 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScrollToTable -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:javaScript.JavaScriptTests@32eebfca]" name="tearDown" is-config="true" duration-ms="16608" started-at="2022-09-30T15:51:52 EEST" finished-at="2022-09-30T15:52:09 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- javaScript.JavaScriptTests -->
+    </test> <!-- JavaScriptTests -->
+    <test name="AlertsTest" duration-ms="83535" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:09 EEST">
+      <class name="alerts.AlertsTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:alerts.AlertsTests@8646db9]" name="setUp" is-config="true" duration-ms="53286" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:51:38 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:alerts.AlertsTests@8646db9]" name="goHome" is-config="true" duration-ms="2211" started-at="2022-09-30T15:51:38 EEST" finished-at="2022-09-30T15:51:41 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testAcceptAlert()[pri:0, instance:alerts.AlertsTests@8646db9]" name="testAcceptAlert" duration-ms="5173" started-at="2022-09-30T15:51:41 EEST" finished-at="2022-09-30T15:51:46 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAcceptAlert -->
-        <test-method status="PASS" signature="goHome()[pri:0, instance:alerts.AlertsTests@87f383f]" name="goHome" is-config="true" duration-ms="436" started-at="2022-09-26T21:56:59 EEST" finished-at="2022-09-26T21:56:59 EEST">
+        <test-method status="PASS" signature="goHome()[pri:0, instance:alerts.AlertsTests@8646db9]" name="goHome" is-config="true" duration-ms="1436" started-at="2022-09-30T15:51:46 EEST" finished-at="2022-09-30T15:51:47 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method status="PASS" signature="testGetTextFromAlert()[pri:0, instance:alerts.AlertsTests@87f383f]" name="testGetTextFromAlert" duration-ms="1788" started-at="2022-09-26T21:56:59 EEST" finished-at="2022-09-26T21:57:01 EEST">
+        <test-method status="PASS" signature="testGetTextFromAlert()[pri:0, instance:alerts.AlertsTests@8646db9]" name="testGetTextFromAlert" duration-ms="5374" started-at="2022-09-30T15:51:47 EEST" finished-at="2022-09-30T15:51:53 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTextFromAlert -->
-        <test-method status="PASS" signature="goHome()[pri:0, instance:alerts.AlertsTests@87f383f]" name="goHome" is-config="true" duration-ms="674" started-at="2022-09-26T21:57:01 EEST" finished-at="2022-09-26T21:57:02 EEST">
+        <test-method status="PASS" signature="goHome()[pri:0, instance:alerts.AlertsTests@8646db9]" name="goHome" is-config="true" duration-ms="2046" started-at="2022-09-30T15:51:53 EEST" finished-at="2022-09-30T15:51:55 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method status="PASS" signature="testSetInputInAlert()[pri:0, instance:alerts.AlertsTests@87f383f]" name="testSetInputInAlert" duration-ms="1044" started-at="2022-09-26T21:57:02 EEST" finished-at="2022-09-26T21:57:03 EEST">
+        <test-method status="PASS" signature="testSetInputInAlert()[pri:0, instance:alerts.AlertsTests@8646db9]" name="testSetInputInAlert" duration-ms="4152" started-at="2022-09-30T15:51:55 EEST" finished-at="2022-09-30T15:51:59 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetInputInAlert -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:alerts.AlertsTests@87f383f]" name="tearDown" is-config="true" duration-ms="1060" started-at="2022-09-26T21:57:03 EEST" finished-at="2022-09-26T21:57:04 EEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:alerts.AlertsTests@8646db9]" name="tearDown" is-config="true" duration-ms="9843" started-at="2022-09-30T15:51:59 EEST" finished-at="2022-09-30T15:52:09 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- alerts.AlertsTests -->
     </test> <!-- AlertsTest -->
+    <test name="WaitTests" duration-ms="84677" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:10 EEST">
+      <class name="wait.WaitTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:wait.WaitTests@3891771e]" name="setUp" is-config="true" duration-ms="50820" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:51:36 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:wait.WaitTests@3891771e]" name="goHome" is-config="true" duration-ms="1020" started-at="2022-09-30T15:51:36 EEST" finished-at="2022-09-30T15:51:37 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testWaitUntilVisible()[pri:0, instance:wait.WaitTests@3891771e]" name="testWaitUntilVisible" duration-ms="15740" started-at="2022-09-30T15:51:37 EEST" finished-at="2022-09-30T15:51:53 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWaitUntilVisible -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:wait.WaitTests@3891771e]" name="tearDown" is-config="true" duration-ms="17085" started-at="2022-09-30T15:51:53 EEST" finished-at="2022-09-30T15:52:10 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- wait.WaitTests -->
+    </test> <!-- WaitTests -->
+    <test name="KeysTests" duration-ms="87164" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:12 EEST">
+      <class name="keys.KeysTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:keys.KeysTests@38bc8ab5]" name="setUp" is-config="true" duration-ms="77221" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:02 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:keys.KeysTests@38bc8ab5]" name="goHome" is-config="true" duration-ms="335" started-at="2022-09-30T15:52:02 EEST" finished-at="2022-09-30T15:52:03 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testBackSpace()[pri:0, instance:keys.KeysTests@38bc8ab5]" name="testBackSpace" duration-ms="1069" started-at="2022-09-30T15:52:03 EEST" finished-at="2022-09-30T15:52:04 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBackSpace -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:keys.KeysTests@38bc8ab5]" name="goHome" is-config="true" duration-ms="386" started-at="2022-09-30T15:52:04 EEST" finished-at="2022-09-30T15:52:04 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testPi()[pri:0, instance:keys.KeysTests@38bc8ab5]" name="testPi" duration-ms="1490" started-at="2022-09-30T15:52:04 EEST" finished-at="2022-09-30T15:52:06 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPi -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:keys.KeysTests@38bc8ab5]" name="tearDown" is-config="true" duration-ms="6640" started-at="2022-09-30T15:52:06 EEST" finished-at="2022-09-30T15:52:12 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- keys.KeysTests -->
+    </test> <!-- KeysTests -->
+    <test name="NavigationTests" duration-ms="90086" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:15 EEST">
+      <class name="navigation.NavigationTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:navigation.NavigationTests@51c8530f]" name="setUp" is-config="true" duration-ms="76277" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:01 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:navigation.NavigationTests@51c8530f]" name="goHome" is-config="true" duration-ms="459" started-at="2022-09-30T15:52:01 EEST" finished-at="2022-09-30T15:52:02 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testNavigator()[pri:0, instance:navigation.NavigationTests@51c8530f]" name="testNavigator" duration-ms="9517" started-at="2022-09-30T15:52:02 EEST" finished-at="2022-09-30T15:52:11 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigator -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:navigation.NavigationTests@51c8530f]" name="goHome" is-config="true" duration-ms="1473" started-at="2022-09-30T15:52:11 EEST" finished-at="2022-09-30T15:52:13 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testSwitchTab()[pri:0, instance:navigation.NavigationTests@51c8530f]" name="testSwitchTab" duration-ms="1298" started-at="2022-09-30T15:52:13 EEST" finished-at="2022-09-30T15:52:14 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSwitchTab -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:navigation.NavigationTests@51c8530f]" name="tearDown" is-config="true" duration-ms="1045" started-at="2022-09-30T15:52:14 EEST" finished-at="2022-09-30T15:52:15 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- navigation.NavigationTests -->
+    </test> <!-- NavigationTests -->
+    <test name="FileUploadTest" duration-ms="119896" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:52:45 EEST">
+      <class name="uploads.FileUploadTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:uploads.FileUploadTests@75881071]" name="setUp" is-config="true" duration-ms="44180" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:51:29 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:uploads.FileUploadTests@75881071]" name="goHome" is-config="true" duration-ms="1834" started-at="2022-09-30T15:51:30 EEST" finished-at="2022-09-30T15:51:32 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testFileUpload()[pri:0, instance:uploads.FileUploadTests@75881071]" name="testFileUpload" duration-ms="72439" started-at="2022-09-30T15:51:32 EEST" finished-at="2022-09-30T15:52:44 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFileUpload -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:uploads.FileUploadTests@75881071]" name="tearDown" is-config="true" duration-ms="1082" started-at="2022-09-30T15:52:44 EEST" finished-at="2022-09-30T15:52:45 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- uploads.FileUploadTests -->
+    </test> <!-- FileUploadTest -->
+    <test name="FrameTests" duration-ms="182231" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:53:47 EEST">
+      <class name="frame.FrameTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:frame.FrameTests@33723e30]" name="setUp" is-config="true" duration-ms="49159" started-at="2022-09-30T15:50:45 EEST" finished-at="2022-09-30T15:51:34 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:frame.FrameTests@33723e30]" name="goHome" is-config="true" duration-ms="1115" started-at="2022-09-30T15:51:34 EEST" finished-at="2022-09-30T15:51:35 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="testWysiwyg()[pri:0, instance:frame.FrameTests@33723e30]" name="testWysiwyg" duration-ms="131149" started-at="2022-09-30T15:51:35 EEST" finished-at="2022-09-30T15:53:47 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWysiwyg -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:frame.FrameTests@33723e30]" name="tearDown" is-config="true" duration-ms="792" started-at="2022-09-30T15:53:47 EEST" finished-at="2022-09-30T15:53:47 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- frame.FrameTests -->
+    </test> <!-- FrameTests -->
   </suite> <!-- QaTest -->
 </testng-results>

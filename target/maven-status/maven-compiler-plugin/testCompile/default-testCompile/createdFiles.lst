@@ -1,8 +1,12 @@
-base\BaseTest.class
 keys\KeysTests.class
 slider\HorizontalSliderTests.class
 uploads\FileUploadTests.class
+contextMenu\ContextMenuTests.class
+frames\FramesTests.class
+javaScript\JavaScriptTests.class
+base\BaseTest.class
+navigation\NavigationTests.class
 frame\FrameTests.class
 alerts\AlertsTests.class
-frames\FramesTests.class
-contextmenu\ContextMenuTests.class
+wait\WaitTests.class
+wait\WaitTests2.class

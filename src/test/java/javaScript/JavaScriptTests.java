@@ -7,11 +7,13 @@ public class JavaScriptTests extends BaseTest {
 
     @Test
     public void testScrollToTable(){
-        homePage.clickLargeAndDeepDom().scrollToTable();
+        homePage.clickLinkPage("Large & Deep DOM");
+        largeAndDeepDomPage.scrollToTable();
     }
 
     @Test
     public void testScrollToFifthParagraphs(){
-        homePage.clickInfiniteScroll().scrollToParagraph(5);
+        homePage.clickLinkPage("Infinite Scroll");
+        infiniteScrollPage.scrollToParagraph(5);
     }
 }

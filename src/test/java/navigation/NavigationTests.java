@@ -7,7 +7,8 @@ public class NavigationTests extends BaseTest {
 
     @Test
     public void testNavigator(){
-        homePage.clickDynamicLoading().clickExample1();
+        homePage.clickLinkPage("Frames");
+        framesPage.clickNestedFrames();
         getWindowManager().goBack();
         getWindowManager().refreshPage();
         getWindowManager().goForward();
@@ -16,7 +17,8 @@ public class NavigationTests extends BaseTest {
 
     @Test
     public void testSwitchTab(){
-        homePage.clickMultipleWindows().clickHere();
+        homePage.clickLinkPage("Multiple Windows");
+        multipleWindowsPage.clickHere();
         getWindowManager().switchToTab("New Window");
     }
 }

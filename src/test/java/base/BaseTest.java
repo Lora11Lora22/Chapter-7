@@ -9,8 +9,7 @@ import pages.*;
 import utils.EventReporter;
 import utils.MultipleWindowsPage;
 import utils.WindowManager;
-
-
+import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
     private EventFiringWebDriver driver;
@@ -29,20 +28,19 @@ public class BaseTest {
     protected InfiniteScrollPage infiniteScrollPage;
     protected MultipleWindowsPage multipleWindowsPage;
     protected WindowManager windowManager;
-
+    protected KeyPressesPage keyPressesPage;
 
     @BeforeTest
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-        // driver = new ChromeDriver();
         driver = new EventFiringWebDriver(new ChromeDriver(getChromeOptions()));
         driver.register(new EventReporter());
         goHome();
-        setCookie();
+        // setCookie();
         // deleteCookie();
         driver.manage().window().maximize();
-        //driver.manage().timeouts().pageLoadTimeout()
-        // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        // driver.manage().timeouts().pageLoadTimeout()
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("https://the-internet.herokuapp.com/");
         homePage = new HomePage(driver);
         javaScriptAlertsPage = new JavaScriptAlertsPage(driver);
@@ -59,6 +57,7 @@ public class BaseTest {
         infiniteScrollPage = new InfiniteScrollPage(driver);
         multipleWindowsPage = new MultipleWindowsPage(driver);
         windowManager = new WindowManager(driver);
+        keyPressesPage = new KeyPressesPage(driver);
     }
 
     @BeforeMethod
@@ -93,22 +92,22 @@ public class BaseTest {
 
     private ChromeOptions getChromeOptions() {
         ChromeOptions options = new ChromeOptions();
-     //   options.addArguments("disable-infobars");
-        //options.setHeadless(true);
+        options.addArguments("disable-infobars");
+        options.setHeadless(true);
         return options;
     }
 
-    private void setCookie() {
+   /* private void setCookie() {
         Cookie cookie = new Cookie.Builder("tau", "123")
                 .domain("the-internet.herokuapp.com/")
                 .build();
         driver.manage().addCookie(cookie);
     }
 
-    // private void deleteCookie() {
-    //     Cookie cookie = new Cookie.Builder("optimizelyBuckets", "%7B%TD")
-    //         .domain("the-internet.herokuapp.com")
-    //        .build();
-    //  driver.manage().deleteCookie(cookie);
-    //  }
+    private void deleteCookie() {
+         Cookie cookie = new Cookie.Builder("optimizelyBuckets", "%7B%TD")
+            .domain("the-internet.herokuapp.com")
+           .build();
+      driver.manage().deleteCookie(cookie);
+      }*/
 }

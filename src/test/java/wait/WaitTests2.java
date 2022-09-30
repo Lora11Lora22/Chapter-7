@@ -12,6 +12,8 @@ public class WaitTests2  extends BaseTest {
         homePage.clickLinkPage("Dynamic Loading");
         dynamicLoadingPage.clickExample2();
         dynamicLoadingExample2Page.clickStart();
-        assertEquals(dynamicLoadingExample2Page.getLoadedText(), "Hello World!", "Loaded text incorrect");
+        assertEquals(dynamicLoadingExample2Page.getLoadedText(),
+                "Hello World!",
+                "Loaded text incorrect");
     }
 }
